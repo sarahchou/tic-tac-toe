@@ -11,14 +11,6 @@ function Square(props) {
 }
   
   class Board extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            squares: Array(9).fill(null),
-            xIsNext: true,
-        };
-    }
-
     handleClick(i) {
       //slice creates a new copy of the squares array after every move, making it immutable
         const squares = this.state.squares.slice();
